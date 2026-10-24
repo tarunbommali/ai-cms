@@ -15,7 +15,7 @@ import uvicorn
 def main():
     """Initialize and start the backend"""
     print("=" * 60)
-    print("🚀 Cloud Monitoring System - Backend Server")
+    print("🚀 Artificial Intelligent Cloud Monitoring System - Backend Server")
     print("=" * 60)
     
     # Initialize database

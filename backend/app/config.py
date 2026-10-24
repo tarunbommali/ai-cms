@@ -1,5 +1,5 @@
 """
-Configuration settings for the Cloud Monitoring System
+Configuration settings for the Artificial Intelligent Cloud Monitoring System
 """
 import logging
 from pydantic_settings import BaseSettings
@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables"""
     
     # Application
-    APP_NAME: str = "Cloud Monitoring System"
+    APP_NAME: str = "Artificial Intelligent Cloud Monitoring System"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
     

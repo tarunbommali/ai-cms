@@ -21,7 +21,7 @@ const HowItWorksPage = () => {
             <div className="text-center">
                 <h1 className="text-3xl font-bold gradient-text mb-2">How It Works</h1>
                 <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                    Understand the complete workflow of the Cloud Monitoring System — from data collection to intelligent alerts.
+                    Understand the complete workflow of the Artificial Intelligent Cloud Monitoring System — from data collection to intelligent alerts.
                 </p>
             </div>
 

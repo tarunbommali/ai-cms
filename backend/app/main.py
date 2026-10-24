@@ -1,6 +1,6 @@
 """
 Main FastAPI application
-Cloud Monitoring System - COMPLETE with ML Features
+Artificial Intelligent Cloud Monitoring System - COMPLETE with ML Features
 """
 
 from contextlib import asynccontextmanager
@@ -25,20 +25,20 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Startup/shutdown hooks (replaces the deprecated @app.on_event API)."""
-    logger.info("Starting Cloud Monitoring System - ML Enhanced v2.0.0")
+    logger.info("Starting Artificial Intelligent Cloud Monitoring System - ML Enhanced v2.0.0")
     init_db()
     start_scheduler()
     logger.info("Database initialized successfully")
 
     yield
 
-    logger.info("Shutting down Cloud Monitoring System")
+    logger.info("Shutting down Artificial Intelligent Cloud Monitoring System")
 
 
 # Create FastAPI app
 app = FastAPI(
     lifespan=lifespan,
-    title="Cloud Monitoring System - ML Enhanced",
+    title="Artificial Intelligent Cloud Monitoring System - ML Enhanced",
     version="2.0.0",
     description=(
         "Production-grade cloud monitoring system with 10 ML features for AWS EC2 instances.\n\n"
@@ -121,7 +121,7 @@ app.openapi = custom_openapi
 async def root():
     """Root endpoint with feature list"""
     return {
-        "message": "Cloud Monitoring System API - ML Enhanced",
+        "message": "Artificial Intelligent Cloud Monitoring System API - ML Enhanced",
         "version": "2.0.0",
         "status": "operational",
         "docs": "/api/docs",
@@ -162,7 +162,7 @@ async def root():
 async def api_root():
     """API root endpoint"""
     return {
-        "message": "Cloud Monitoring System API",
+        "message": "Artificial Intelligent Cloud Monitoring System API",
         "version": "2.0.0",
         "documentation": "/api/docs",
         "redoc": "/api/redoc",
